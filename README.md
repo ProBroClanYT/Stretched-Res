@@ -7,7 +7,7 @@ config = ConfigParser()
 
 userName = getpass.getuser() #Gets the username
 
-config.read(r"C:\Users\%s\AppData\Local\FortniteGame\Saved\Config\WindowsClient\GameUserSettings.ini" %userName)
+config.read(r"C:\Users\\%s\AppData\Local\FortniteGame\Saved\Config\WindowsClient\GameUserSettings.ini" %userName)
 #Telling configparser that it is going to work on that file
 x = ""
 y = ""
@@ -45,6 +45,6 @@ config.set('/Script/FortniteGame.FortGameUserSettings', 'LastUserConfirmedDesire
 config.set('/Script/FortniteGame.FortGameUserSettings', 'LastUserConfirmedDesiredScreenHeight', str(y))
 #Sets the values in the .ini file to the values of user input
 
-with open(r"C:\Users\%s\AppData\Local\FortniteGame\Saved\Config\WindowsClient\GameUserSettings.ini" %userName, 'w')as file:
+with open(r"C:\Users\\%s\AppData\Local\FortniteGame\Saved\Config\WindowsClient\GameUserSettings.ini" %userName, 'w')as file:
     config.write(file)
     #Opens the file and writes the new values
