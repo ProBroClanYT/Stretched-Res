@@ -18,19 +18,15 @@ print('Follow @Sup3rN0vaa on Twitter')
 while x == "":
     try:
         x = int(input('What width do you wanted your res to be? '))
-
     except:
         print('Please enter an actual number ')
-
     #Makes sure that if the user does not input an actual number, they have to try again
 
 while y == "":
     try:
         y = int(input('What height do you want your res to be? '))
-
     except:
         print('Please enter an actual number ')
-
     #Same for height
 
 
